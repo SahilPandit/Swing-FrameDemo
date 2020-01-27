@@ -59,11 +59,18 @@ public class HelloWorldSwing {
         //Create and set up the window.
         JFrame myFriend = new JFrame("HelloWorldSwing");
         myFriend.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        myFriend.setSize(2000,1080);
+        
+        Jlabel emptyLabel = newJlabel("Hello World!");
+        emptyLabel.setPreferredSize(new Dimension(175,100));
+        myFriend.getContentPane().add(emptyLabel,BorderLayout.CENTER);
+        
+        
  
         //Add the ubiquitous "Hello World" label.
-         
         JLabel label = new JLabel("CORONAVIRUS is the WORST");
         myFriend.getContentPane().add(label);
+        
  
         //Display the window.
         myFriend.pack();
